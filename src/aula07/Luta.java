@@ -87,4 +87,16 @@ public class Luta {
         }
     }
 
+    public void cinturao() {
+
+        if(this.getDesafiante().getVitorias() > this.getDesafiado().getVitorias()) {
+            System.out.println("O lutador" + this.getDesafiante() + "leva o cinturão para casa!");
+        } else if (this.getDesafiado().getVitorias() > this.getDesafiante().getVitorias()) {
+            System.out.println("O lutador" + this.getDesafiado() + "leva o cinturão para casa!");
+        } else {
+            System.out.println("Os lutadores irão lutar em breve para decidir quem leva o cinturão!");
+        }
+    }
+
+
 }
